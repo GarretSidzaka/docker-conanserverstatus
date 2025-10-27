@@ -97,10 +97,8 @@ sudo systemctl enable conan_server_status.service
 sudo systemctl start conan_server_status.service
 ```
 
-**d. Optional: Deploy with docker compose**
 
-
-### Testing/Debugging
+### Optional: Deploy with docker compose
 To debug the container:
 ```docker logs -f python-container```
 
