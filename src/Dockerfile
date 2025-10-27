@@ -5,6 +5,13 @@ LABEL maintainer="GarretSidzaka"
 ENV TIMEZONE=America/Los_Angeles \
     DEBIAN_FRONTEND=noninteractive \
 
-
+#Install from the git repo
 RUN apt-get update \
-    && apt-get install -y
+    && apt-get install -y git \
+    && git clone https://github.com/melecajou/conanserverstatus.git \
+    && cd conanserverstatus \
+    && pip install -r requirements.txt \
+    && cp config.py.example config.py
+
+    
+    
