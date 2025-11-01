@@ -1,5 +1,5 @@
 # Bot language. Options: 'en' for English, 'pt_BR' for Brazilian Portuguese.
-LANGUAGE = "pt_BR"
+LANGUAGE = "en"
 
 # Your Discord Bot's Token.
 # NEVER share or commit this token to public repositories.
@@ -9,7 +9,7 @@ STATUS_BOT_TOKEN = "YOUR_TOKEN_HERE"
 # You can add as many servers as you want, just copy the dictionary block.
 SERVERS = [
         {
-            "NAME": "My Server 1 (Exiles)",
+            "NAME": "My Server 1 (Savage)",
             "SERVER_IP" : "127.0.0.1",
             "RCON_PORT" : 25575,
             "RCON_PASS" : "YOUR_RCON_PASSWORD_HERE",
@@ -41,7 +41,7 @@ SERVERS = [
             }
         },
         {
-            "NAME": "My Server 3 (PvP)",
+            "NAME": "My Server 3 (AoC)",
             "SERVER_IP": "127.0.0.1",
             "RCON_PORT": 25577,
             "RCON_PASS": "YOUR_PVP_RCON_PASSWORD",
@@ -50,30 +50,30 @@ SERVERS = [
             
             # --- Advanced Features Example ---
 
-            "ANNOUNCEMENTS": {
-                "ENABLED": True,
-                "CHANNEL_ID": 112233445566778899,
-                "TIMEZONE": "America/Sao_Paulo", # Example: America/New_York, Europe/London
-                "SCHEDULE": [
-                    {
-                        "DAY": "Wednesday", # Options: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
-                        "HOUR": 19, # 0-23
-                        "MESSAGE": "📢 Double XP is now active on the PvP server!"
-                    },
-                    {
-                        "DAY": "Sunday",
-                        "HOUR": 0,
-                        "MESSAGE": "📢 Double Farm rates are now active on the PvP server!"
-                    }
-                ]
-            },
+#            "ANNOUNCEMENTS": {
+#                "ENABLED": True,
+#                "CHANNEL_ID": 112233445566778899,
+#                "TIMEZONE": "America/Sao_Paulo", # Example: America/New_York, Europe/London
+#                "SCHEDULE": [
+#                    {
+#                        "DAY": "Wednesday", # Options: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday
+#                        "HOUR": 19, # 0-23
+#                        "MESSAGE": "📢 Double XP is now active on the PvP server!"
+#                    },
+#                    {
+#                        "DAY": "Sunday",
+#                        "HOUR": 0,
+#                        "MESSAGE": "📢 Double Farm rates are now active on the PvP server!"
+#                    }
+#                ]
+#            },
 
-            "BUILDING_WATCHER": {
-                "ENABLED": True,
-                "CHANNEL_ID": 223344556677889900,
-                "SQL_PATH": "/home/steam/bots/ConanServerStatus/sql/buildings.sql", # Must be an absolute path
-                "DB_BACKUP_PATH": "/path/to/your/pvp_server/ConanSandbox/Saved/game_backup_1.db", # Must be an absolute path to a backup
-                "BUILD_LIMIT": 2000
-            }
-        }
+#            "BUILDING_WATCHER": {
+#                "ENABLED": True,
+#                "CHANNEL_ID": 223344556677889900,
+#                "SQL_PATH": "/home/steam/bots/ConanServerStatus/sql/buildings.sql", # Must be an absolute path
+#                "DB_BACKUP_PATH": "/path/to/your/pvp_server/ConanSandbox/Saved/game_backup_1.db", # Must be an absolute path to a backup
+#                "BUILD_LIMIT": 2000
+#            }
+#        }
 ]
